@@ -8,5 +8,5 @@ download-finali-1:
 
 push:
 	@git add .
-	@git commit -am "commit_message"
+	@git commit -am "Updates" || true
 	@git push
