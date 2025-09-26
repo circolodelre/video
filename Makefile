@@ -7,6 +7,7 @@ download-finali-1:
 	@bash ./scripts/finali-1/download.sh
 
 push:
+	@git config credential.helper 'cache --timeout=3600'
 	@git add .
 	@git commit -am "Updates" || true
 	@git push
